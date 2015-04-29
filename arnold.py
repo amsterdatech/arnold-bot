@@ -23,7 +23,7 @@ def check_inbox(browser,email,inbox_url='https://mailinator.com/index.jsp'):
     browser.visit(inbox_url)
     g = browser.find_by_id('inboxfield')
     g.fill(email)
-    time.sleep(2)
+    time.sleep(5)
     check = browser.find_by_css('.btn-success')
     check.click()
     inbox = browser.find_by_id('mailcontainer')
